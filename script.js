@@ -3,234 +3,334 @@ const deliveriesData = [
     {
         city: "Nioaque",
         deliveryDates: ["2024-10-03", "2024-11-07", "2024-12-12"],
-        link: "https://www.exemplo.com/sao-paulo",
+        link: "http://wa.me/5567992654374",
         logisticsCode: "CG", // Campo Grande
         fixedDelivery: "" // Entrega toda terça
     },
     {
         city: "Guia Lopes da Laguna",
         deliveryDates: ["2024-10-03", "2024-11-07", "2024-12-12"],
-        link: "https://www.exemplo.com/sao-paulo",
+        link: "http://wa.me/5567992654374",
         logisticsCode: "CG",
-        fixedDelivery: "terça"
+        fixedDelivery: ""
     },
     {
         city: "Jardim",
         deliveryDates: ["2024-10-03", "2024-11-07", "2024-12-12"],
-        link: "https://www.exemplo.com/sao-paulo",
+        link: "http://wa.me/5567992654374",
         logisticsCode: "CG",
-        fixedDelivery: "terça"
+        fixedDelivery: ""
+    },
+    {
+        city: "Jardim",
+        deliveryDates: ["2024-10-04", "2024-11-08", "2024-12-06"],
+        link: "http://wa.me/556730338935",
+        logisticsCode: "DOS",
+        fixedDelivery: ""
+    },
+    {
+        city: "Nova Alvorada Do Sul",
+        deliveryDates: ["2024-10-02", "2024-11-06", "2024-12-04"],
+        link: "http://wa.me/556730338935",
+        logisticsCode: "DOS", // Dourados
+        fixedDelivery: "" // Entrega toda quarta
     },
     {
         city: "Nova Alvorada Do Sul",
         deliveryDates: ["2024-10-24", "2024-11-28"],
-        link: "https://www.exemplo.com/rio-de-janeiro",
-        logisticsCode: "DOS", // Dourados
-        fixedDelivery: "quarta" // Entrega toda quarta
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG", // Campo Grande
+        fixedDelivery: "" // Entrega toda quarta
     },
     {
         city: "Maracaju",
         deliveryDates: ["2024-10-24", "2024-11-28"],
-        link: "https://www.exemplo.com/rio-de-janeiro",
-        logisticsCode: "DOS",
-        fixedDelivery: "quarta"
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: ""
     },
     {
-        city: "Ahanduí",
-        deliveryDates: ["2024-10-24", "2024-11-28"],
-        link: "https://www.exemplo.com/rio-de-janeiro",
+        city: "Maracaju",
+        deliveryDates: ["2024-10-04", "2024-10-11", "2024-10-25", "2024-11-08", "2024-11-15", 
+            "2024-11-29", "2024-12-06", "2024-12-13", "2024-12-27"],
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
-        fixedDelivery: "quarta"
+        fixedDelivery: ""
+    },
+    {
+        city: "Anhanduí",
+        deliveryDates: ["2024-10-24", "2024-11-28"],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: ""
     },
     {
         city: "Camapuã",
         deliveryDates: ["2024-09-26", "2024-10-31", "2024-05-12"],
-        link: "https://www.exemplo.com/belo-horizonte",
+        link: "http://wa.me/5567992654374",
         logisticsCode: "CG",
         fixedDelivery: "" // Sem entrega fixa
     },
     {
         city: "Ponta Porã",
         deliveryDates: ["2024-10-07", "2024-11-04", "2024-12-02"],
-        link: "https://www.exemplo.com/curitiba",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: "" // Sem entrega fixa
     },
     {
         city: "Ithaum",
         deliveryDates: ["2024-10-07", "2024-11-04", "2024-12-02"],
-        link: "https://www.exemplo.com/curitiba",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Antonio João",
-        deliveryDates: ["2024-10-07", "2024-11-04", "2024-12-02"],
-        link: "https://www.exemplo.com/curitiba",
+        deliveryDates: ["2024-10-07", "2024-11-04"],
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Laguna Caarapa",
         deliveryDates: ["2024-09-30", "2024-10-14", "2024-10-28", "2024-11-11", "2024-11-25", "2024-12-09", "2024-12-23"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: "" // Sem entrega fixa
     },
     {
         city: "Indapolis",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: "" // Sem entrega fixa
     },
     {
         city: "Fat. do Sul",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Vicentina",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Jatei",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Gloria de Dos",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Culturama",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Deodapolis",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Ivinhema",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Barreirinhos",
         deliveryDates: ["2024-09-24", "2024-10-01", "2024-10-08", "2024-10-15", "2024-10-22", "2024-10-29", "2024-11-05", "2024-11-12", "2024-11-19", "2024-11-26", "2024-12-03", "2024-12-10", "2024-12-17", "2024-12-24", "2024-12-31"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Nova Andradina",
         deliveryDates: ["2024-09-30", "2024-10-01", "2024-11-05", "2024-12-03"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Rio Brilhante",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Panambi",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Vila Vargas",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Douradina",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Macauba",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Guassu",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Vila Formosa",
         deliveryDates: ["2024-09-25", "2024-10-02", "2024-10-09", "2024-10-16", "2024-10-23", "2024-10-30", "2024-11-06", "2024-11-13", "2024-11-20","2024-11-27","2024-12-04","2024-12-11","2024-12-08","2024-12-25"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Nova America",
         deliveryDates: ["2024-10-03", "2024-10-17", "2024-10-31", "2024-11-07","2024-11-14","2024-11-28","2024-12-05","2024-12-19"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Cristalina",
         deliveryDates: ["2024-10-03", "2024-10-17", "2024-10-31", "2024-11-07","2024-11-14","2024-11-28","2024-12-05","2024-12-19"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Caarapo",
         deliveryDates: ["2024-10-03", "2024-10-17", "2024-10-31", "2024-11-07","2024-11-14","2024-11-28","2024-12-05","2024-12-19"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Juti",
         deliveryDates: ["2024-10-17", "2024-11-14", "2024-12-19"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
     },
     {
         city: "Navirai",
         deliveryDates: ["2024-10-17", "2024-11-14", "2024-12-19"],
-        link: "https://www.exemplo.com/porto-alegre",
+        link: "http://wa.me/556730338935",
         logisticsCode: "DOS",
         fixedDelivery: ""
-    }
+    },
+    {
+        city: "Itaporã",
+        deliveryDates: ["2024-10-04", "2024-10-11", "2024-10-18", "2024-10-25", "2024-11-08", "2024-11-15"
+            , "2024-11-22", "2024-11-19", "2024-12-06", "2024-12-13", "2024-12-20", "2024-12-27"],
+        link: "http://wa.me/556730338935",
+        logisticsCode: "DOS",
+        fixedDelivery: ""
+    },
+    {
+        city: "Bonito",
+        deliveryDates: ["2024-10-04", "2024-11-08", "2024-12-06"],
+        link: "http://wa.me/556730338935",
+        logisticsCode: "DOS",
+        fixedDelivery: ""
+    },
+    {
+        city: "Vista Alegre",
+        deliveryDates: ["2024-10-04", "2024-11-08", "2024-12-06"],
+        link: "http://wa.me/556730338935",
+        logisticsCode: "DOS",
+        fixedDelivery: ""
+    },
+    {
+        city: "Sidrolandia",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA SEGUNDA-FEIRA"
+    },
+    {
+        city: "Ribas do Rio Pardo",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA TERÇA-FEIRA"
+    },
+    {
+        city: "Terenos",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA QUARTA-FEIRA"
+    },
+    {
+        city: "Anastacio",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA QUARTA-FEIRA"
+    },
+    {
+        city: "Aquidauana",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA QUARTA-FEIRA"
+    },
+    {
+        city: "Jaraguari",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA SEXTA-FEIRA"
+    },
+    {
+        city: "Banderantes",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA SEXTA-FEIRA"
+    },
+    {
+        city: "São Gabriel do Oeste",
+        deliveryDates: [],
+        link: "http://wa.me/5567992654374",
+        logisticsCode: "CG",
+        fixedDelivery: "TODA SEXTA-FEIRA"
+    },
     // Adicione mais cidades, datas, links, e entregas fixas conforme necessário
 ];
 
